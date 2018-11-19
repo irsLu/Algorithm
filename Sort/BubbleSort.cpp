@@ -40,7 +40,7 @@ void bulle_sort_sign (int arr[], int len)
 	}
 }
 
-//鸡尾酒排需
+//鸡尾酒排序
 void cocktail_sort(int arr[], int len)
 {
 	int j , left = 0, right = len - 1;
