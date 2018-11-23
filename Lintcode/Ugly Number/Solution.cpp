@@ -9,22 +9,10 @@ class CHeap
 public:
 	~CHeap()
 	{
-		
+		m_heap.clear();
 	}
 
-	CHeap()
-	{
-		
-	}
-
-	void printHeap()
-	{
-		for(int i = 0; i < m_heap.size(); i++)
-		{
-			cout<<"["<<i<<"] "<<m_heap[i]<<"_";
-		}
-		cout<<endl;
-	}
+	CHeap(){}
 
 	void push(T element)
 	{
@@ -54,11 +42,9 @@ public:
 
 	T pop()
 	{
-		//cout<<"1_"<<m_heap.size()<<endl;
 		if(m_heap.size() == 0)
-		{
 			exit(1);
-		}
+		
 		T res = m_heap[0];
 		T lastNode = m_heap[m_heap.size() - 1];
 		m_heap.pop_back();
@@ -66,16 +52,14 @@ public:
 		while(child < size)
 		{
 			if(child < size && m_heap[child] > m_heap[child + 1])
-			{
 				child++;
-			}
+			
 
 			if(lastNode > m_heap[child])
 			{
 				m_heap[parent] = m_heap[child];
 				parent = child;
 				child = child*2 + 1;
-
 			}
 			else
 			{
