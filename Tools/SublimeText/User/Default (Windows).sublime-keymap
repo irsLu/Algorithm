@@ -1,0 +1,16 @@
+[
+    { "keys": ["alt+up"], "command": "swap_line_up" },                        // 当前行，上移一行（默认是 ctrl+shift+up 太麻烦，经常用）
+    { "keys": ["alt+down"], "command": "swap_line_down" },                    // 当前行，下移一行
+    { "keys": ["alt+a"], "command": "jump_back" },                            // 跳转到上一编辑位置
+    { "keys": ["alt+s"], "command": "jump_forward" },                         // 跳转到下一编辑位置
+    { "keys": ["alt+-"], "command": "fold_by_level", "args": {"level": 1} },  // 折叠
+    { "keys": ["alt++"], "command": "unfold_all" },                           // 展开所有
+
+    // 快捷输入
+    // 60个横杠，常用于函数分割
+    { "keys": ["alt+1"], "command": "insert_snippet", "args": {"contents": "------------------------------------------------------------\n"} },
+
+    // 在lua中添加任意位置 return 的语句（lua中会报错不可到达分支）
+    { "keys": ["alt+0"], "command": "insert_snippet", "args": {"contents": "if true then return end----////"} },
+    { "keys": ["alt+d"], "command": "add_date_stamp" },
+]

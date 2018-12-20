@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+/// <param name=""> </param>]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>_n_p</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.cs</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>param note</description>
+</snippet>

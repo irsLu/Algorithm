@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[/// Created by luoyang  ${1:alt+d}]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>_n_self</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.cs</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>note self info</description>
+</snippet>

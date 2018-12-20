@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[/// $TM_FILENAME]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>_n_f</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.cs</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>file name</description>
+</snippet>

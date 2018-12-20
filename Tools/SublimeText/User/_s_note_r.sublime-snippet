@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[/// <returns> </returns>]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>_n_r</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.cs</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>note return</description>
+</snippet>
