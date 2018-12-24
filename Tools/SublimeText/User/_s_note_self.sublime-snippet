@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[/// Created by luoyang  ${1:alt+d}]]></content>
+    <content><![CDATA[/// Created by irs  ${1:alt+d}]]></content>
     <!-- Optional: Tab trigger to activate the snippet -->
     <tabTrigger>_n_self</tabTrigger>
     <!-- Optional: Scope the tab trigger will be active in -->
