@@ -34,12 +34,13 @@ public class Color:ColorPrototype
     //采用C#的序列化和反序列化来实现深拷贝
     public override ColorPrototype Clone()
     {
-        MemoryStream ms = new MemoryStream();
-        BinaryFormatter bf = new BinaryFormatter();
-
-        bf.Serialize(ms, this);
-        ms.Position = 0；
-        return bf.Deserialize(ms) as ColorPrototype;
+        using(MemoryStream ms = new MemoryStream())
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            bf.Serialize(ms, this);
+            ms.Position = 0；
+            return bf.Deserialize(ms) as ColorPrototype;   
+        }
     }
 }
 
