@@ -11,7 +11,7 @@ public abstract class ColorPrototype
     public abstract ColorPrototype Clone();
 }
 
-public class Color:ColorPrototype
+public class Color:ColorPrototype, ICloneable
 {
     private int _red;
     private int _blue;
@@ -25,14 +25,14 @@ public class Color:ColorPrototype
     }
 
     //浅拷贝
-    public override ColorPrototype Clone()
+    public override object Clone()
     {
-        return this.MemberwiseClone() as ColorPrototype;
+        return this.MemberwiseClone();
     }
 
     //深拷贝，主要是把对象内部的引用的对象也拷贝一份，不影响源对象
     //采用C#的序列化和反序列化来实现深拷贝
-    public override ColorPrototype Clone()
+    public ColorPrototype DeepClone()
     {
         using(MemoryStream ms = new MemoryStream())
         {
@@ -41,6 +41,11 @@ public class Color:ColorPrototype
             ms.Position = 0；
             return bf.Deserialize(ms) as ColorPrototype;   
         }
+    }
+    
+    public ColorPrototype ShallowClone()
+    {
+        return Clone() as ColorPrototype;
     }
 }
 
