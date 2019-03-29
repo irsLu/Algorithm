@@ -4,13 +4,18 @@
 /// Created by irs  2018-12-24
 /// </summary>
 
+using System;
 
 public class Client
 {
-    public void Init()
+
+    static void Main(string[] args)
     {
         ACharactor daidai = new DaiDai(new Sword());
 
         daidai.Attack();
+
+        Console.ReadKey();
     }
+
 }

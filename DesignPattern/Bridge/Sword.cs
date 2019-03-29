@@ -5,17 +5,16 @@
 /// </summary>
 
 using System;
-using UnityEngine;
 
-public class Sword:IWeapon
+public class Sword : IWeapon
 {
-    public void class Sword()
+    public Sword()
     {
-        this.name = "EX";
+        this.name = "KAKA Sword";
     }
 
-    public void Action()
+    public override void Action()
     {
-        Debug.Log(this.name + "stab !");
+       Console.WriteLine(this.name + " stab !");
     }
 }

@@ -5,7 +5,6 @@
 /// </summary>
 
 using System;
-using UnityEngine;
 
 public abstract class ACharactor
 {
@@ -20,7 +19,7 @@ public abstract class ACharactor
 
     public void Attack()
     {
-        Debug.Log(this.name + " begin Attack: ");
+        Console.WriteLine(this.name + " begin Attack: ");
         implement.Action();
     }
 }
